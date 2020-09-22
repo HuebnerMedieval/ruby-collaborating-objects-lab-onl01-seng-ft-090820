@@ -26,8 +26,7 @@ class Artist
     if self.all.find {|artist| artist.name == name}
       artist
     else
-      new_artist = self.new(name)
-      new_artist
+      self.new(name)
     end
   end
   
